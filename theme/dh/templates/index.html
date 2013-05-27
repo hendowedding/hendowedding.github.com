@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+
+<style>
+    body {
+        cursor: pointer;
+    }
+
+    #banner {
+        display: none;
+    }
+</style>
+<script type="text/javascript">
+
+    $(function () {
+        $('body').on('click', function () {
+            //top.location.href="/home.html";
+            return true;
+        });
+    });
+
+</script>
+
+
+<div style="text-align: center;margin: 30px 0;" class="frontpage">
+    <h3 style="border-radius: 10px; background-color: #FFFDD0; display: inline-block; width: auto; padding: 20px; line-height: 1.4em;     text-transform:uppercase;
+    ">
+        Saturday 28th<br>September 2013</h3>
+
+</div>
+
+
+<section id="content" class="body" style="">
+    <div class="frontpage">
+
+
+        <h1>Volume II<br>Notes &amp; Appendix</h1>
+        <hr>
+        <h2>Hannah &amp; David</h2>
+
+
+        <a href="/pages/home.html" id="nextpage">HAI</a>
+    </div>
+
+
+</section>
+
+
+{% endblock content %}
